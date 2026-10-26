@@ -1,1 +1,137 @@
+/* ==========================================================
+   GROUP 2: BRAND IDENTITY & STYLE DICTIONARY
+   ========================================================== */
 
+:root {
+  /* School Color Tokens */
+  --pcshs-blue: #0d47a1;
+  --pcshs-gold: #ffb300;
+  --pcshs-blue-light: #e3f2fd;
+
+  /* UI Surface Shading */
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
+  --card-white: #ffffff;
+
+  /* Structural Tokens */
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(13, 71, 161, 0.1), 0 8px 10px -6px rgba(13, 71, 161, 0.1);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================
+   GLOBAL RESET & BASE STYLES
+   ========================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+}
+
+/* ==========================================================
+   HEADER & NAVIGATION
+   ========================================================== */
+
+header {
+  background-color: var(--card-white);
+  box-shadow: var(--shadow-sm);
+  padding: 10px 20px;
+}
+
+header strong {
+  color: var(--pcshs-blue);
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+}
+
+nav a:hover {
+  color: var(--pcshs-blue);
+  background-color: var(--pcshs-blue-light);
+}
+
+/* ==========================================================
+   LAYOUT & SECTIONS
+   ========================================================== */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: var(--card-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+h1, h2 {
+  color: var(--pcshs-blue);
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.6rem;
+  border-bottom: 3px solid var(--pcshs-gold);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+img {
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+  background-color: var(--pcshs-blue);
+  color: #ffffff;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
