@@ -1,5 +1,5 @@
 /* ==========================================================
-   GROUP 2: BRAND IDENTITY & STYLE DICTIONARY
+   GROUP 2: BRAND IDENTITY & STYLE DICTIONARY (`theme.css`)
    ========================================================== */
 
 :root {
@@ -39,12 +39,6 @@ body {
   line-height: 1.6;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  margin: 20px 0;
-}
-
 /* ==========================================================
    HEADER & NAVIGATION
    ========================================================== */
@@ -53,6 +47,9 @@ header {
   background-color: var(--card-white);
   box-shadow: var(--shadow-sm);
   padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header strong {
